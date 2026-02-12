@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Churn Analysis - A detailed look at analyzing customer retention using Excel">
+    <title>Customer Churn Analysis | Wilfex Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                Back to Projects
+            </a>
+            <h1 class="project-hero-title">Customer Churn Analysis</h1>
+            <div class="project-meta">
+                <span class="project-meta-item">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                    Excel
+                </span>
+                <!-- Add more meta items like date if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <article class="project-content">
+        <div class="container">
+            <!-- Featured Image -->
+            <div class="project-featured-image">
+                <img src="../images/churn_rate.png" alt="Customer Churn Analysis Dashboard">
+            </div>
+
+            <!-- Overview Section -->
+            <section class="content-section">
+                <h2>Project Overview</h2>
+                <p>
+                    This project analyzes customer churn to identify key factors influencing customer retention.
+                    Using Excel pivot tables and visualizations, I determined who churns, why they churn, 
+                    and which factors matter most for business decisions.
+                </p>
+            </section>
+
+            <!-- Dashboard Section -->
+            <section class="content-section">
+                <h2>The Dashboard</h2>
+                <p>
+                    The  dashboard above provides a high-level view of customer churn patterns, highlighting the most 
+                    influential factors affecting customer retention. It shows that churn is primarily driven by 
+                    contract type, with month-to-month customers exhibiting significantly higher churn rates 
+                    compared to customers on longer-term contracts.
+                </p>
+                <p>
+                    Additional segmentation confirms that demographic factors such as gender have minimal impact 
+                    on churn, allowing focus to remain on behavioral and contractual drivers. The dashboard is 
+                    designed to support fast, data-driven decisions by clearly identifying high-risk customer 
+                    groups and areas where retention efforts will have the greatest impact.
+                </p>
+            </section>
+
+            <!-- About the Data Section -->
+            <section class="content-section">
+                <h2>About the Data</h2>
+                <p>
+                    <strong>Source:</strong> Telecom Customer Churn dataset
+                </p>
+                <p>The dataset contains:</p>
+                <ul class="content-list">
+                    <li>Customer ID</li>
+                    <li>Churn status (Yes/No)</li>
+                    <li>Contract type</li>
+                    <li>Tenure</li>
+                    <li>Monthly and total charges</li>
+                    <li>Demographics (gender)</li>
+                    <li>Services subscribed</li>
+                </ul>
+            </section>
+
+            <!-- Key Findings Section -->
+            <section class="content-section">
+                <h2>Key Findings</h2>
+                <div class="findings-grid">
+                    <div class="finding-card">
+                        <div class="finding-number">26.5%</div>
+                        <h4>Overall Churn Rate</h4>
+                        <p>More than a quarter of customers churned during the analysis period.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-number">42.7%</div>
+                        <h4>Month-to-Month Churn</h4>
+                        <p>Highest churn rate by far. One-year contracts: 11.3%. Two-year: just 2.8%.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-number">~0%</div>
+                        <h4>Gender Impact</h4>
+                        <p>Female: 26.92% vs Male: 26.16%—gender is not a meaningful driver.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Insights Section -->
+            <section class="content-section">
+                <h2>Key Insights</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h4>Contract Type is the Strongest Driver</h4>
+                        <p>Longer contracts dramatically reduce churn. The difference between month-to-month (42.7%) and two-year contracts (2.8%) is massive.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Gender Has No Impact</h4>
+                        <p>Churn rates are nearly identical across genders—this variable can be deprioritized in retention strategies.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Actionable Focus</h4>
+                        <p>Prioritize migrating month-to-month customers to longer-term contracts for the highest retention impact.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools & Technologies Section -->
+            <section class="content-section">
+                <h2>Tools & Technologies</h2>
+                <div class="tools-used">
+                    <span class="tool-badge">Microsoft Excel</span>
+                    <span class="tool-badge">Pivot Tables</span>
+                    <span class="tool-badge">Calculated Percentages</span>
+                    <span class="tool-badge">Column Charts</span>
+                    <span class="tool-badge">Dashboard Design</span>
+                </div>
+            </section>
+
+            <!-- Recommendations Section -->
+            <section class="content-section">
+                <h2>Business Recommendations</h2>
+                <ul class="content-list">
+                    <li>Focus retention efforts on month-to-month customers</li>
+                    <li>Encourage migration to longer-term contracts through incentives</li>
+                    <li>Avoid demographic-based churn strategies—they won't move the needle</li>
+                    <li>Prioritize variables with measurable behavioral influence</li>
+                </ul>
+            </section>
+
+            <!-- Conclusion Section -->
+            <section class="content-section">
+                <h2>Conclusion</h2>
+                <p>
+                    This analysis demonstrates a structured, hypothesis-driven approach emphasizing signal 
+                    over noise to deliver clear, decision-focused insights for business environments.
+                </p>
+            </section>
+
+            <!-- Project Links -->
+            <section class="content-section project-cta">
+                <h2>View the Full Project</h2>
+                <div class="cta-buttons">
+                    <a href="https://github.com/wilfex81/Telco-Customer-Churn/tree/main" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-secondary">
+                        Back to All Projects
+                    </a>
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Wilfex. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/wilfex81" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/wilfex81" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

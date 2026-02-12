@@ -484,3 +484,379 @@ body {
         padding: 2rem 1.5rem;
     }
 }
+
+/* ========================================
+   Project Detail Page Styles
+   ======================================== */
+
+/* Project Hero Section */
+.project-hero {
+    padding: 6rem 0 3rem;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-hover);
+}
+
+.back-link svg {
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover svg {
+    transform: translateX(-4px);
+}
+
+.project-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.project-hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.project-meta-item svg {
+    color: var(--accent-primary);
+}
+
+/* Project Content */
+.project-content {
+    padding: 3rem 0 5rem;
+    background-color: var(--bg-primary);
+}
+
+.project-featured-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-hover);
+}
+
+.project-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content Sections */
+.content-section {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.content-section h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin: 2rem 0 1rem;
+}
+
+.content-section h4 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin: 1.5rem 0 0.75rem;
+}
+
+.content-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.content-list {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.content-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Content Images */
+.content-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 0.75rem;
+}
+
+/* Code Blocks */
+.code-block {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+}
+
+.code-block code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Findings Grid */
+.findings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.finding-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.finding-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.finding-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.finding-card h4 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.finding-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Techniques Grid */
+.techniques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.technique-card {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.technique-card h4 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.technique-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Features List */
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feature-item {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-primary);
+}
+
+.feature-item h4 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.feature-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Tools Used */
+.tools-used {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.tool-badge {
+    background-color: var(--accent-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Project CTA Section */
+.project-cta {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+.project-cta h2 {
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Project Page Responsive */
+@media (max-width: 768px) {
+    .project-hero {
+        padding: 5rem 0 2rem;
+    }
+
+    .project-hero-title {
+        font-size: 2.25rem;
+    }
+
+    .project-hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .findings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .techniques-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-cta {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero-title {
+        font-size: 1.75rem;
+    }
+
+    .project-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .techniques-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
