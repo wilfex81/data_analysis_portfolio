@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
         "Excel-based churn analysis uncovering the strongest retention drivers across contract type, tenure, and billing behavior.",
       techStack: ["Excel", "Data Analysis", "Pivot Tables", "Visualizations"],
       liveLink: "https://github.com/wilfex81/Telco-Customer-Churn/tree/main",
-      images: ["/project-images/churn_rate.png"],
+      images: [`${import.meta.env.BASE_URL}project-images/churn_rate.png`],
       longDescription:
         "This project analyzes customer churn to identify the key factors influencing retention.",
       sections: [
@@ -143,7 +143,7 @@ const Projects: React.FC = () => {
         "SQL-driven analysis of 2022 layoffs data to clean the dataset and uncover industry, timing, and company-stage patterns.",
       techStack: ["SQL", "Data Analysis", "Window Functions", "Data Cleaning"],
       liveLink: "https://github.com/wilfex81/SQL_DATA_CLEANING_FIRST_EXERCISE/blob/main/Exploratory%20Data%20Analysis.sql",
-      images: ["/project-images/eda.jpg"],
+      images: [`${import.meta.env.BASE_URL}project-images/eda.jpg`],
       longDescription:
         "This project explores a 2022 layoffs dataset using SQL to clean the data and uncover meaningful patterns in company downsizing.",
       sections: [
@@ -268,7 +268,7 @@ const Projects: React.FC = () => {
         "Interactive Excel dashboard that transforms raw retail sales data into clear performance metrics, trends, and decision-ready insights.",
       techStack: ["Excel", "Data Analysis", "Dashboard Design", "Financial Insights"],
       liveLink: "https://github.com/wilfex81/Sales-Revenue-Analysis?tab=readme-ov-file#dashboard",
-      images: ["/project-images/Dashboard.png"],
+      images: [`${import.meta.env.BASE_URL}project-images/Dashboard.png`],
       longDescription:
         "This project cleans raw retail sales data and turns it into an interactive Excel dashboard built for quick business review.",
       sections: [
