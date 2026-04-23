@@ -82,7 +82,3 @@ The app is configured as a static Vite site. The main HTML entry point lives at 
 - Project screenshots are served from `public/project-images`
 - The project cards open a scrollable modal so longer case-study content stays readable
 - External project links are intentionally disabled in the React portfolio UI for now because the portfolio pages themselves link to the project repositories
-
-## License
-
-No explicit license has been added. If you plan to publish or share the code publicly, add a license file that matches your intended usage.
